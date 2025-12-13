@@ -1,0 +1,37 @@
+/* 1. Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@200;300;400;500;600;700&display=swap');
+
+/* 2. Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* 4. Utilities and Custom Styles */
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+  }
+}
+
+/* 5. Premium Dark Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0a09; 
+}
+::-webkit-scrollbar-thumb {
+  background: #44403c; 
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #78716c; 
+}
